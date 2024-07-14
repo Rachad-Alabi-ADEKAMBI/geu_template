@@ -3,7 +3,7 @@
                 <div class="footer__items">
                                 <div class="footer__items__item">
                                     <h4>
-                                        Contact
+                                        Contacts
                                     </h4>
 
                                     <ul>
@@ -26,52 +26,51 @@
 
                                 <div class="footer__items__item">
                                     <h4>
-                                        Liens
+                                    Notre entreprise
                                     </h4>
 
                                     <ul>
-                                        <li>
-                                            <a href="{{ url('/')}}">Accueil</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ url('/account')}}">Mon compte</a>
-                                        </li>
+                                        <li><a href="index.php?action=aboutPage">A-propos</a></li>
+                                        <li><a href="index.php?action=teamPage">Equipe</a></li>
+                                        <li><a href="index.php?action=careerPage">Carrière</a></li>
+                                        <li><a href="index.php?action=documentsPage">Documents</a></li>
+                                        <li><a href="index.php?action=blogPage">Blog</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="footer__items__item">
+                                    <h4>
+                                        Devenir client
+                                    </h4>
 
-                                        <li>
-                                            <a href="{{ url('/ads')}}">Annonces</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="{{ url('/advertisers')}}">Annonceurs</a>
-                                        </li>
-                                        
-                                        <li>
-                                            <a href="{{ url('/faq')}}">FAQ</a>
-                                        </li>
+                                    <ul>
+                                        <li><a href="index.php?action=faqPage">FAQ</a></li>
+                                        <li><a href="index.php?action=pricingPage">Tarifs</a></li> 
+                                        <li><a href="index.php?action=pricingPage">Fournir des documents</a></li>
+                                        <li><a href="index.php?action=pricingPage">Vérifier la candidature</a></li>  
+                                        <li><a href="index.php?action=loginPage">Tableau de bord</a></li>  
                                     </ul>
                                 </div>
 
                                 <div class="footer__items__item">
                                     <h4>
-                                    Notre entreprise
+                                        Produits énergetiques
                                     </h4>
 
                                     <ul>
-                                        <li><a href="{{ url('/contact')}}">Contact</a></li>
-                                        <li><a href="{{ url('/about')}}">Qui sommes nous ?</a></li>
-                                        <li><a href="{{ url('/home#about')}}">Nos services</a></li>
-                                        <li><a href="{{ url('/cgu')}}">Conditions générales</a></li>
-                                        <li><a href="{{ url('/terms')}}">Politique de confidentialité</a></li>
+                                        <li><a href="index.php?action=gasPage">A-propos</a></li>
+                                        <li><a href="index.php?action=electricityPage">Electricité</a></li> 
                                     </ul>
                                 </div>
-                            </div>
+
+                               </div>
 
                             <hr>
                             <div class="footer__bottom">
                                 <div class="text text-center">
                                     <p class="text-center">
                                     © GRU, 2024, Tous droits réservés <br>
-                               Ukraine 
+                              Made with passion in Ukraine
                                     </p>
                                 </div>
                 </div>

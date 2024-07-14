@@ -1,7 +1,8 @@
 $primary: #E93810;
 $secondary: #3F3D88;
 $tertiary: #111111;
-$white: white;
+$white: rgb(79, 80, 60);
+$grey: rgb(248, 237, 237);
 $grey-dark: rgb(194, 190, 190);
 
 @mixin flex($flex-direction: row){
@@ -13,6 +14,23 @@ $grey-dark: rgb(194, 190, 190);
 
 html, body{
     background-color: $grey-dark;
+    line-height: 1.2em;
+    font-weight: 500px;
+    font-size: 1.1em;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+img{
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .hero{
@@ -130,6 +148,30 @@ html, body{
     }
 }
 
+.team{
+ //   text-align: justify;
+    margin: auto;
+    &__member{
+        border-radius: 5px;
+        background-color: $grey;
+        border: 1px solid $grey;
+        margin: 15px;
+        width: 340px;
+        padding-bottom: 10px;
+        img{
+            width: 300px;
+            height: 230px;
+            margin: auto auto 5px auto;
+        }
+
+        .links{
+            i{
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
 .footer{
     background-color: $tertiary;
     color: $white;
@@ -159,6 +201,10 @@ html, body{
                 li{
                     margin: 15px auto;
                     color: $grey-dark;
+
+                    i{
+                        margin-right: 10px;
+                    }
 
                      a{
                         color: $grey-dark;
