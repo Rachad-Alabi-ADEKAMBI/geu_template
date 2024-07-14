@@ -1,0 +1,215 @@
+$primary: #E93810;
+$secondary: #3F3D88;
+$tertiary: #111111;
+$white: white;
+$grey-dark: rgb(194, 190, 190);
+
+@mixin flex($flex-direction: row){
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+}
+
+html, body{
+    background-color: $grey-dark;
+}
+
+.hero{
+    height: 85vh;
+    margin: 0 auto;
+    z-index: -9999;
+    display: block;
+    background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)),
+    url('http://127.0.0.1/immo2/public/img/hero1.jpg');
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    padding-bottom: 15px;
+    width: 100%;
+    padding-top: 50px;
+
+
+    &__content{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        padding-top: 110px;
+        text-align: center;
+
+        h1{
+            font-size: 3em;
+            color: white;
+        }
+
+        p{
+            margin: 40px auto;
+            font-weight: 800;
+
+        }
+    }
+
+}
+
+.categories{
+    @include flex();
+    margin: 40px auto;
+
+    .category{
+        width: 200px;
+        height: 120px;
+        text-align: center;
+        display: block;
+        background-color: $white;
+        padding-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &__icon{
+            color: $primary;
+        }
+
+        &__name{
+            color: $tertiary;
+            font-weight: bold;
+        }
+    }
+
+    .category:hover{
+        background-color: $primary;
+        
+        &__icon{
+           i{
+            color: $white;
+            color: red;
+           }
+        }
+
+        &__name{
+            color: $white;
+            color: red;
+        }
+    }
+
+}
+
+.about{
+    @include flex();
+    &__image{
+        position: relative;
+
+        .image{
+            width: 450px;
+            height: 300px;
+            margin: 35px auto auto 15px;
+            border-radius: 10px;
+        }
+
+        &__bg{
+            width: 55%;
+            margin: auto 0;
+            background-color: $primary;
+            position: absolute;
+            border-radius: 10px;
+            top: 0;
+            right: 0;
+            z-index: -9999;
+            height: 370px;
+        }
+    }
+
+    &__text{
+        margin: 15px auto;
+        padding-left: 10px;
+        padding-top: 40px;
+        text-align: justify;
+        
+        strong{
+            color: $primary
+        }
+    }
+}
+
+.footer{
+    background-color: $tertiary;
+    color: $white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    i{
+        color: $primary;
+        margin-right: 1px
+    }
+
+    &__items{
+        @include flex();
+
+        &__item{
+            display: block;
+            padding-left: 30px;
+            flex: 1;
+
+            h4{
+                color: $white;
+                padding-right: 15px;
+            }
+
+            ul{
+                margin: 20px auto;
+                li{
+                    margin: 15px auto;
+                    color: $grey-dark;
+
+                     a{
+                        color: $grey-dark;
+                     }
+
+                     a:hover{
+                        color: $primary;
+                     }
+                }
+            }
+
+            .footer__gallery{
+                @include flex();
+                padding-right: 15px;
+
+                img{
+                    width: 80px;
+                    height: 60px;
+                    border-radius: 10px;
+                    margin: 5px;
+                    border: 5px $white solid;
+                }
+            }
+
+
+        }
+    }
+
+    hr{
+        width: 80%;
+        margin: 20px auto;
+        height: 1px;
+        background-color: $white;
+    }
+    &__bottom{
+        margin: 25px auto;
+        .text{
+            text-align: center;
+            color: $grey-dark;
+
+           p{
+            text-align: center;
+            strong{
+                color: $primary;
+            }
+           }
+        }
+    }
+}
+
+/*responsive for 1024px*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
