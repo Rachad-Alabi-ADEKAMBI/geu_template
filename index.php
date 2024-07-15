@@ -10,12 +10,18 @@ ini_set('display_errors', 0);
 require_once 'src/controller/front/home.php';
 require_once 'src/controller/front/about.php';
 require_once 'src/controller/front/team.php';
+require_once 'src/controller/front/career.php';
+require_once 'src/controller/front/documents.php';
+require_once 'src/controller/front/blog.php';
+require_once 'src/controller/front/faq.php';
+require_once 'src/controller/front/login.php';
 
+require_once 'src/controller/back/admin/dashboard_admin.php';
 
 if (isset($_GET['action']) && $_GET['action'] !== '') {
 
     if ($_GET['action'] === 'loginPage') {
-      //  loginPage();
+        loginPage();
     }
 
     
@@ -26,6 +32,26 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
 
     elseif ($_GET['action'] === 'aboutPage') {
         aboutPage();
+    }
+
+    elseif ($_GET['action'] === 'careerPage') {
+      careerPage();
+    }
+
+    elseif ($_GET['action'] === 'documentsPage') {
+      documentsPage();
+    }
+
+    elseif ($_GET['action'] === 'blogPage') {
+      blogPage();
+    }
+
+    elseif ($_GET['action'] === 'faqPage') {
+      faqPage();
+    }
+
+    elseif ($_GET['action'] === 'dashboard_adminPage') {
+      dashboard_adminPage();
     }
     
     else {

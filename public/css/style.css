@@ -5,6 +5,10 @@ html, body {
   font-size: 1.1em;
 }
 
+h2 {
+  color: #E93810;
+}
+
 ul li {
   list-style: none;
 }
@@ -15,6 +19,15 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .hero {
@@ -22,7 +35,7 @@ a {
   margin: 0 auto;
   z-index: -9999;
   display: block;
-  background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)), url("http://127.0.0.1/immo2/public/img/hero1.jpg");
+  background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)), url("public/img/hero1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +61,7 @@ a {
 
 .categories {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   flex-direction: row;
   margin: 40px auto;
@@ -58,7 +71,7 @@ a {
   height: 120px;
   text-align: center;
   display: block;
-  background-color: rgb(79, 80, 60);
+  background-color: white;
   padding-top: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -74,17 +87,17 @@ a {
   background-color: #E93810;
 }
 .categories .category:hover__icon i {
-  color: rgb(79, 80, 60);
+  color: white;
   color: red;
 }
 .categories .category:hover__name {
-  color: rgb(79, 80, 60);
+  color: white;
   color: red;
 }
 
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -118,6 +131,123 @@ a {
   color: #E93810;
 }
 
+.services__service {
+  border-radius: 5px;
+  border: 3px solid white;
+  background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)), url("../public/images/hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 330px;
+  margin: 30px;
+  flex: 1;
+  padding-top: 30px;
+}
+.services__service h3 {
+  margin: 30px auto;
+}
+
+.clients {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.clients p {
+  text-align: center;
+  margin: 15px auto;
+}
+.clients__list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.clients__list__item {
+  display: block;
+  flex: 1;
+}
+.clients__list__item .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #E93810;
+  color: white;
+  text-align: center;
+  display: table;
+  margin: auto;
+}
+.clients__list__item .circle p {
+  vertical-align: middle;
+  margin: 15px auto;
+}
+.clients__list__item p {
+  margin: 10px auto;
+}
+
+.blog {
+  display: block;
+  text-align: center;
+}
+.blog h2 {
+  margin: auto;
+}
+.blog p {
+  width: 70%;
+  margin: auto;
+}
+.blog__items {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.blog__items__item {
+  border-radius: 5px;
+  bottom: 3px solid white;
+  position: relative;
+  display: block;
+  height: auto;
+  text-align: center;
+  background-color: wheat;
+  padding: 35px;
+  margin: 15px;
+  width: 46%;
+}
+.blog__items__item h3 {
+  color: black;
+  text-align: center;
+}
+.blog__items__item .btn {
+  margin: auto;
+}
+.blog__items__item .date {
+  position: absolute;
+  border-radius: 5px;
+  top: 115px;
+  right: -30px;
+  height: 90px;
+  width: 60px;
+  background-color: #3F3D88;
+  text-align: center;
+  color: white;
+}
+
+.documents__list__item {
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid rgb(248, 237, 237);
+  padding: 8px;
+  width: 47%;
+  margin: 5px auto;
+}
+.documents__list__item:hover {
+  color: #3F3D88;
+}
+.documents__list__item:hover h2 {
+  color: #3F3D88;
+}
+
 .team {
   margin: auto;
 }
@@ -140,7 +270,7 @@ a {
 
 .footer {
   background-color: #111111;
-  color: rgb(79, 80, 60);
+  color: white;
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -150,7 +280,7 @@ a {
 }
 .footer__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -160,7 +290,7 @@ a {
   flex: 1;
 }
 .footer__items__item h4 {
-  color: rgb(79, 80, 60);
+  color: white;
   padding-right: 15px;
 }
 .footer__items__item ul {
@@ -181,7 +311,7 @@ a {
 }
 .footer__items__item .footer__gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   flex-direction: row;
   padding-right: 15px;
@@ -191,13 +321,13 @@ a {
   height: 60px;
   border-radius: 10px;
   margin: 5px;
-  border: 5px rgb(79, 80, 60) solid;
+  border: 5px white solid;
 }
 .footer hr {
   width: 80%;
   margin: 20px auto;
   height: 1px;
-  background-color: rgb(79, 80, 60);
+  background-color: white;
 }
 .footer__bottom {
   margin: 25px auto;

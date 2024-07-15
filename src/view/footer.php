@@ -48,7 +48,7 @@
                                         <li><a href="index.php?action=pricingPage">Tarifs</a></li> 
                                         <li><a href="index.php?action=pricingPage">Fournir des documents</a></li>
                                         <li><a href="index.php?action=pricingPage">Vérifier la candidature</a></li>  
-                                        <li><a href="index.php?action=loginPage">Tableau de bord</a></li>  
+                                        <li><a href="index.php?action=dashboard_adminPage">Tableau de bord</a></li>  
                                     </ul>
                                 </div>
 

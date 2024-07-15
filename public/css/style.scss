@@ -1,13 +1,15 @@
 $primary: #E93810;
 $secondary: #3F3D88;
 $tertiary: #111111;
-$white: rgb(79, 80, 60);
+$white: white;
+$wheat: wheat;
+$black: black;
 $grey: rgb(248, 237, 237);
 $grey-dark: rgb(194, 190, 190);
 
 @mixin flex($flex-direction: row){
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
     flex-direction: $flex-direction;
 }
@@ -17,6 +19,14 @@ html, body{
     line-height: 1.2em;
     font-weight: 500px;
     font-size: 1.1em;
+}
+
+h1{
+
+}
+
+h2{
+    color: $primary;
 }
 
 ul{
@@ -31,6 +41,15 @@ img{
 
 a{
     text-decoration: none;
+    color: $black;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .hero{
@@ -39,7 +58,7 @@ a{
     z-index: -9999;
     display: block;
     background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)),
-    url('http://127.0.0.1/immo2/public/img/hero1.jpg');
+    url('public/img/hero1.jpg');
    background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,6 +163,147 @@ a{
         
         strong{
             color: $primary
+        }
+    }
+}
+
+.services{
+    &__service{
+        border-radius: 5px;
+        border: 3px solid $white;
+        background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)),
+            url('../public/images/hero1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 330px;
+        margin: 30px;
+        flex: 1;
+        padding-top: 30px;
+
+        i{
+           // margin: 30px;
+            //font-size: 3px;
+        }
+
+        h3{
+            margin: 30px auto;
+        }
+
+
+    }
+}
+
+.clients{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+   p{
+    text-align: center;
+    margin: 15px auto;
+   }
+
+    &__list{
+        @include flex();
+        
+        &__item{
+            display: block;
+             flex: 1;
+
+        .circle{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: $primary;
+            color: $white;
+            text-align: center;
+            display: table;
+            margin: auto;
+
+            p{
+                vertical-align: middle;
+                margin: 15px auto;
+            }
+        }
+
+        p{
+            margin: 10px auto;
+        }
+        }
+    }
+}
+
+.blog{
+    display: block;
+    text-align: center;
+
+    h2{
+        margin: auto;
+    }
+    p{
+        width: 70%;
+        margin: auto;
+    }
+
+    &__items{
+        @include flex();
+        &__item{
+            border-radius: 5px;
+            bottom: 3px solid $white;
+            position: relative;
+            display: block;
+            height: auto;
+            text-align: center;
+              background-color: $wheat;
+            padding: 35px;
+            margin: 15px;
+            width: 46%;
+
+            h3{
+                color: $black;
+                text-align: center;
+            }
+
+           .btn{
+            margin: auto;
+           }
+
+           .date{
+            position: absolute;
+            border-radius: 5px;
+            top: 115px;
+            right: -30px;
+            height: 90px;
+            width: 60px;
+            background-color: $secondary;
+            text-align: center;
+            color: $white;
+           }
+
+
+        }
+    }
+}
+
+.documents{
+    &__list{
+        &__item{
+            cursor: pointer;
+            color: $black;
+            border-radius: 5px;
+            border: 2px solid $grey;
+            padding: 8px;
+            width: 47%;
+            margin: 5px auto;
+
+        }
+
+        &__item:hover{
+            color: $secondary;
+
+            h2{
+                color: $secondary;
+            }
         }
     }
 }
