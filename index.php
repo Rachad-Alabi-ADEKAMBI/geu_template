@@ -16,6 +16,8 @@ require_once 'src/controller/front/blog.php';
 require_once 'src/controller/front/faq.php';
 require_once 'src/controller/front/login.php';
 require_once 'src/controller/front/gas.php';
+require_once 'src/controller/front/electricity.php';
+require_once 'src/controller/front/register.php';
 
 require_once 'src/controller/back/admin/dashboard_admin.php';
 
@@ -24,6 +26,10 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     if ($_GET['action'] === 'loginPage') {
         loginPage();
     }
+
+    if ($_GET['action'] === 'registerPage') {
+      registerPage();
+  }
 
     
     elseif ($_GET['action'] === 'teamPage') {
@@ -55,8 +61,16 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
       gasPage();
     }
 
+    elseif ($_GET['action'] === 'electricityPage') {
+      electricityPage();
+    }
+
     elseif ($_GET['action'] === 'dashboard_adminPage') {
       dashboard_adminPage();
+    }
+
+    elseif ($_GET['action'] === 'home') {
+      home();
     }
     
     else {

@@ -1,426 +1,441 @@
-$primary: #E93810;
-$secondary: #3F3D88;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+$primary: #0057b7; // Ukrainian blue
+$secondary: #ffd700; // Ukrainian yellow
 $tertiary: #111111;
 $white: white;
 $wheat: wheat;
 $black: black;
-$grey: rgb(248, 237, 237);
-$grey-dark: rgb(194, 190, 190);
+$grey: rgb(33, 37, 41); // Dark grey for dark theme
+$grey-dark: rgb(20, 24, 28); // Even darker grey
 
-@mixin flex($flex-direction: row){
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    flex-direction: $flex-direction;
+@mixin flex($flex-direction: row) {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: $flex-direction;
 }
 
-html, body{
-    background-color: $grey-dark;
-    line-height: 1.2em;
-    font-weight: 500px;
-    font-size: 1.1em;
+html, body {
+  background-color: $grey-dark;
+  color: $white;
+  line-height: 1.6;
+  font-size: 1.1em;
+  box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  
 }
 
-h1{
-
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
 }
 
-h2{
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+  
+  &:hover {
     color: $primary;
+  }
 }
 
-ul{
-    li{
-        list-style: none;
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-yellow{
+  color: $secondary;
+}
+
+.text-dark{
+  color: $black;
+}
+
+.red{
+  color: red;
+  font-weight: bold;
+}
+
+.navbar{
+    background-color: $grey-dark;
+    padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: $white;
+    z-index: 9999;
+
+    .logo{
+        width: 90px;
+        height: 60px;
     }
+
 }
 
-img{
-    border-radius: 5px;
-}
-
-a{
-    text-decoration: none;
-    color: $black;
-}
-
-.text-justify{
-    text-align: justify;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.hero{
+.hero {
     height: 85vh;
     margin: 0 auto;
     z-index: -9999;
     display: block;
-    background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)),
-    url('public/img/hero1.jpg');
+    background-image: linear-gradient(rgba(29, 48, 223, 0.548), rgba(92, 97, 19, 0.589)), url('https://plus.unsplash.com/premium_photo-1661964136447-676beb97b303?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-bottom: 15px;
     width: 100%;
     padding-top: 50px;
-
-
-    &__content{
-        width: 80%;
-        margin: auto;
-        height: 100%;
-        padding-top: 110px;
-        text-align: center;
-
-        h1{
-            font-size: 3em;
-            color: white;
-        }
-
-        p{
-            margin: 40px auto;
-            font-weight: 800;
-
-        }
+  
+    &__content {
+      width: 80%;
+      margin: auto;
+      height: 100%;
+      padding-top: 110px;
+      text-align: center;
+  
+      h1 {
+        font-size: 4em;
+        font-weight: 700;
+        color: $secondary;
+      }
+  
+      p {
+        margin: 40px auto;
+        font-weight: 800;
+        font-size: 1.6em;
+        color: $white;
+      }
     }
+  }
+  
 
-}
+.categories {
+  @include flex();
+  margin: 40px auto;
 
-.categories{
-    @include flex();
-    margin: 40px auto;
-
-    .category{
-        width: 200px;
-        height: 120px;
-        text-align: center;
-        display: block;
-        background-color: $white;
-        padding-top: 20px;
-        border-radius: 10px;
-        cursor: pointer;
-
-        &__icon{
-            color: $primary;
-        }
-
-        &__name{
-            color: $tertiary;
-            font-weight: bold;
-        }
-    }
-
-    .category:hover{
-        background-color: $primary;
-        
-        &__icon{
-           i{
-            color: $white;
-            color: red;
-           }
-        }
-
-        &__name{
-            color: $white;
-            color: red;
-        }
-    }
-
-}
-
-.about{
-    @include flex();
-    &__image{
-        position: relative;
-
-        .image{
-            width: 450px;
-            height: 300px;
-            margin: 35px auto auto 15px;
-            border-radius: 10px;
-        }
-
-        &__bg{
-            width: 55%;
-            margin: auto 0;
-            background-color: $primary;
-            position: absolute;
-            border-radius: 10px;
-            top: 0;
-            right: 0;
-            z-index: -9999;
-            height: 370px;
-        }
-    }
-
-    &__text{
-        margin: 15px auto;
-        padding-left: 10px;
-        padding-top: 40px;
-        text-align: justify;
-        
-        strong{
-            color: $primary
-        }
-    }
-}
-
-.services{
-    &__service{
-        border-radius: 5px;
-        border: 3px solid $white;
-        background-image: linear-gradient(rgba(177, 108, 223, 0.548), rgba(15, 35, 153, 0.589)),
-            url('../public/images/hero1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 330px;
-        margin: 30px;
-        flex: 1;
-        padding-top: 30px;
-
-        i{
-           // margin: 30px;
-            //font-size: 3px;
-        }
-
-        h3{
-            margin: 30px auto;
-        }
-
-
-    }
-}
-
-.clients{
-    display: block;
+  .category {
+    width: 200px;
+    height: 120px;
     text-align: center;
-    margin: 20px auto;
-   p{
+    background-color: $grey;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 15px;
+
+    &__icon {
+      color: $secondary;
+    }
+
+    &__name {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  .category:hover {
+    background-color: $primary;
+
+    &__icon, &__name {
+      color: $white;
+    }
+  }
+}
+
+.about, .offers {
+  @include flex();
+  margin: 40px auto;
+
+  &__image {
+    position: relative;
+
+    .image {
+      width: 450px;
+      height: 300px;
+      margin: 35px auto auto 15px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+
+    &__bg {
+      width: 55%;
+      background-color: $primary;
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      right: 0;
+      z-index: -999;
+      height: 370px;
+    }
+  }
+
+  &__text {
+    margin: 15px auto;
+    padding: 5px 10px;
+    text-align: justify;
+
+    strong {
+      color: $primary;
+    }
+  }
+}
+
+.services {
+  @include flex();
+  margin: 0px auto;
+
+  &__service {
+    border-radius: 5px;
+    border: 3px solid $grey;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('public/img/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 30px;
+    flex: 1;
+    padding: 30px;
+
+    h3 {
+      margin: 30px auto;
+      color: $white;
+    }
+  }
+}
+
+.clients {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+
+  p {
     text-align: center;
     margin: 15px auto;
-   }
+  }
 
-    &__list{
-        @include flex();
-        
-        &__item{
-            display: block;
-             flex: 1;
+  &__list {
+    @include flex();
 
-        .circle{
-            width: 60px;
-            height: 60px;
-            border-radius: 30px;
-            background-color: $primary;
-            color: $white;
-            text-align: center;
-            display: table;
-            margin: auto;
+    &__item {
+      display: block;
+      flex: 1;
 
-            p{
-                vertical-align: middle;
-                margin: 15px auto;
-            }
-        }
-
-        p{
-            margin: 10px auto;
-        }
-        }
-    }
-}
-
-.blog{
-    display: block;
-    text-align: center;
-
-    h2{
+      .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: $primary;
+        color: $white;
+        text-align: center;
+        display: table;
         margin: auto;
-    }
-    p{
-        width: 70%;
-        margin: auto;
-    }
 
-    &__items{
-        @include flex();
-        &__item{
-            border-radius: 5px;
-            bottom: 3px solid $white;
-            position: relative;
-            display: block;
-            height: auto;
-            text-align: center;
-              background-color: $wheat;
-            padding: 35px;
-            margin: 15px;
-            width: 46%;
-
-            h3{
-                color: $black;
-                text-align: center;
-            }
-
-           .btn{
-            margin: auto;
-           }
-
-           .date{
-            position: absolute;
-            border-radius: 5px;
-            top: 115px;
-            right: -30px;
-            height: 90px;
-            width: 60px;
-            background-color: $secondary;
-            text-align: center;
-            color: $white;
-           }
-
-
+        p {
+          vertical-align: middle;
+          margin: 15px auto;
         }
+      }
+
+      p {
+        margin: 10px auto;
+      }
     }
+  }
 }
 
-.documents{
-    &__list{
-        &__item{
-            
+.blog {
+  display: block;
+  text-align: center;
 
-            h3{
-                color: $secondary;
-            }
-            cursor: pointer;
-            color: $black;
-            border-radius: 5px;
-            border: 2px solid $grey;
-            padding: 8px;
-            width: 47%;
-            margin: 5px auto;
-
-        }
-
-        &__item:hover{
-            color: $primary;
-
-            h2{
-                color: $primary;
-            }
-        }
-    }
-}
-
-.team{
- //   text-align: justify;
+  h2, p {
+    width: 70%;
     margin: auto;
-    &__member{
+  }
+
+  &__items {
+    @include flex();
+
+    &__item {
+      border-radius: 5px;
+      border: 3px solid $grey;
+      position: relative;
+      display: block;
+      text-align: center;
+      background-color: $grey;
+      padding: 35px;
+      margin: 15px;
+      width: 46%;
+
+      h3 {
+        color: $white;
+      }
+
+      .btn {
+        margin: auto;
+      }
+
+      .date {
+        position: absolute;
         border-radius: 5px;
-        background-color: $grey;
-        border: 1px solid $grey;
-        margin: 15px;
-        width: 340px;
-        padding-bottom: 10px;
-        img{
-            width: 300px;
-            height: 230px;
-            margin: auto auto 5px auto;
-        }
-
-        .links{
-            i{
-                font-size: 1.4em;
-            }
-        }
+        top: 115px;
+        right: -30px;
+        height: 90px;
+        width: 60px;
+        background-color: $secondary;
+        text-align: center;
+        color: $white;
+      }
     }
+  }
 }
 
-.footer{
-    background-color: $tertiary;
-    color: $white;
-    padding-top: 60px;
-    padding-bottom: 30px;
+.documents {
+  &__list {
+    @include flex();
 
-    i{
+    &__item {
+      cursor: pointer;
+      color: $white;
+      border-radius: 5px;
+      border: 2px solid $grey;
+      padding: 8px;
+      width: 47%;
+      margin: 5px auto;
+
+      h3 {
+        color: $secondary;
+      }
+
+      &:hover {
         color: $primary;
-        margin-right: 1px
+      }
+    }
+  }
+}
+
+.team {
+  margin: auto;
+  @include flex();
+
+  &__member {
+    border-radius: 5px;
+    background-color: $grey;
+    border: 1px solid $grey;
+    margin: 15px;
+    width: 340px;
+    padding-bottom: 10px;
+
+    img {
+      width: 300px;
+      height: 230px;
+      margin: 5px auto;
     }
 
-    &__items{
-        @include flex();
-
-        &__item{
-            display: block;
-            padding-left: 30px;
-            flex: 1;
-
-            h4{
-                color: $white;
-                padding-right: 15px;
-            }
-
-            ul{
-                margin: 20px auto;
-                li{
-                    margin: 15px auto;
-                    color: $grey-dark;
-
-                    i{
-                        margin-right: 10px;
-                    }
-
-                     a{
-                        color: $grey-dark;
-                     }
-
-                     a:hover{
-                        color: $primary;
-                     }
-                }
-            }
-
-            .footer__gallery{
-                @include flex();
-                padding-right: 15px;
-
-                img{
-                    width: 80px;
-                    height: 60px;
-                    border-radius: 10px;
-                    margin: 5px;
-                    border: 5px $white solid;
-                }
-            }
-
-
-        }
+    .links {
+      i {
+        font-size: 1.4em;
+      }
     }
+  }
+}
 
-    hr{
-        width: 80%;
+.footer {
+  background-color: $tertiary;
+  color: $white;
+  padding: 60px 30px;
+
+  i {
+    color: $primary;
+    margin-right: 5px;
+  }
+
+  &__items {
+    @include flex();
+
+    &__item {
+      display: block;
+      padding: 0 30px;
+      flex: 1;
+
+      h4 {
+        color: $white;
+      }
+
+      ul {
         margin: 20px auto;
-        height: 1px;
-        background-color: $white;
-    }
-    &__bottom{
-        margin: 25px auto;
-        .text{
-            text-align: center;
-            color: $grey-dark;
 
-           p{
-            text-align: center;
-            strong{
-                color: $primary;
+        li {
+          margin: 15px auto;
+          color: $white;
+
+          i {
+            margin-right: 10px;
+          }
+
+          a {
+            color: $white;
+
+            &:hover {
+              color: $primary;
             }
-           }
+          }
         }
+      }
+
+      .footer__gallery {
+        @include flex();
+        padding-right: 15px;
+
+        img {
+          width: 80px;
+          height: 60px;
+          border-radius: 10px;
+          margin: 5px;
+          border: 5px solid $white;
+        }
+      }
     }
+  }
+
+  hr {
+    width: 80%;
+    margin: 20px auto;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__bottom {
+    margin: 25px auto;
+
+    .text {
+      text-align: center;
+      color: $white;
+
+      p {
+        text-align: center;
+
+        strong {
+          color: $primary;
+        }
+      }
+    }
+  }
 }
 
-/*responsive for 1024px*/
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
 
-}

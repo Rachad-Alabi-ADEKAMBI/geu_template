@@ -14,6 +14,7 @@
 <!-- Icon Font Stylesheet -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!-- Libraries Stylesheet -->
 <link href="public/lib/animate/animate.min.css" rel="stylesheet">
@@ -28,7 +29,10 @@
 <link href="public/css/style.css" rel="stylesheet">
 
 <meta name="robots" content="index, follow" />
-<meta name="description" content="GRU est une entreprise ukrainienne qui vous fournit de l'énergie">
+<meta name="description" content="GEU – це українська компанія, яка забезпечує вас газом та електроенергією за нижчими цінами в Україні">
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+<link rel="icon" type="image/x-icon" href="public/images/logo-geu.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   

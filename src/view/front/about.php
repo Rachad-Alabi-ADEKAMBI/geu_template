@@ -4,35 +4,10 @@
 
  ob_start(); ?>
     <section class='section' >
-    <h1 class="text-center">
+    <h1 class="text-center mt-4">
         A-propos
     </h1>
-        <!--services-->
-        <div class="container mt-4">
-                <div class="row services">
-                    <div class="col-sm-12 col-md-6 services__image">
-                        <img src="{{ asset('img/hero1.jpg')}}" alt="" class="image">
-                            <div class="services__image__bg">
-                            </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 services__text">
-                        <h2>
-                            Nos services
-                        </h2>
-
-                        <div class="mt-4">
-                            <p><i class="fa fa-check text-blue mr-2"></i>Annonces gratuites</p>
-                            <p><i class="fa fa-check text-blue mr-2"></i>Recherches personnalisées</p>
-                            <p><i class="fa fa-check text-blue mr-2"></i>Mise en relation entre annonceurs et clients</p>
-                            <p><i class="fa fa-check text-blue mr-2"></i>Gestion juridique, fiscale et sociale</p>
-                            <p><i class="fa fa-check text-blue mr-2"></i>Gestion de patrimoine</p>
-                            <p><i class="fa fa-check text-blue mr-2"></i>Conseils en investissement</p>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!--services-->
+       
 
         <!--about-->
         <div class="container mt-5 mb-5 ">
@@ -53,7 +28,7 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 about__image">
-                    <img src="{{ asset('img/hero2.jpg')}}" alt="" class="image">
+                    <img src="public/images/hero1.jpg" alt="" class="image">
                             <div class="about__image__bg">
                             </div>
                     </div>
@@ -62,34 +37,32 @@
         </div>
         <!--end about-->
 
-        <div class="container mt-4 mt-5">
-                <div class="row services">
-                    <div class="col-sm-12 col-md-6 services__image">
-                        <img src="{{ asset('img/hero3.jpeg')}}" alt="" class="image">
-                            <div class="services__image__bg">
+         <!--offers-->
+         <div class="container mt-4">
+                <div class="row offers">
+                    <div class="col-sm-12 col-md-6 offers__image">
+                        <img src="https://images.unsplash.com/photo-1511258471059-9811f2e09498?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                            <div class="offers__image__bg">
                             </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 services__text">
+                    <div class="col-sm-12 col-md-6 offers__text">
                         <h2>
                             Notre vision
                         </h2>
 
                         <div class="mt-4">
-                           <p>
-                           Chez Immobilier Bénin, nous envisageons un avenir où chaque membre de la 
-                                        diaspora peut réaliser ses ambitions d'investissement au Bénin en toute sérénité.
-                                         Notre vision est de devenir le partenaire privilégié des entrepreneurs et 
-                                         investisseurs, offrant des solutions complètes et adaptées à leurs besoins.  <br> <br>
-                                         En nous appuyant sur notre expertise en gestion juridique, fiscale et sociale, 
-                                         nous nous engageons à faciliter vos projets et à contribuer à la 
-                                         croissance économique du pays. Ensemble, construisons un Bénin prospère et
-                                          innovant, où chaque projet trouve sa place et prospère.
-                           </p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Annonces gratuites</p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Recherches personnalisées</p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Mise en relation entre annonceurs et clients</p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Gestion juridique, fiscale et sociale</p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Gestion de patrimoine</p>
+                            <p><i class="fa fa-check text-blue mr-2"></i>Conseils en investissement</p>
                         </div>
                     </div>
                 </div>
-        </div> 
+        </div>
+        <!--offers-->
     </section>
 
 <?php $content = ob_get_clean(); ?>

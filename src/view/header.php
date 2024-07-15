@@ -1,35 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand logo mr-2" href="#">GRU</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="public/images/logo-geu.png" class='logo' alt="газ та електрика в Україні">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Про компанію
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-white" href="index.php?action=teamPage">Команда</a>
+          <a class="dropdown-item text-white" href="index.php?action=careerPage">Кар'єра</a>
+          <a class="dropdown-item text-white" href="index.php?action=documentsPage">Документи</a>
+        </div>
+      </li> 
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Енергетичні продукти
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-white" href="index.php?action=gasPage">Газ</a>
+          <a class="dropdown-item text-white" href="index.php?action=electricityPage">Електрика</a>
         </div>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link " href="index.php?action=contactPage">Contact</a>
+        <a class="nav-link text-white" href="index.php?action=blogPage">Новини</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.php?action=home#contact">Контакт</a>
       </li>
     </ul>
-
-    <a href="index.php?action=loginPage" class="btn btn-primary mr-2">
-        Connexion
-    </a>
+   
+    <a class="btn btn-outline-success mr-0 my-sm-0" type="submit">Офіс</a>
   </div>
 </nav>
