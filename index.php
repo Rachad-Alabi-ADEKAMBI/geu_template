@@ -15,6 +15,7 @@ require_once 'src/controller/front/documents.php';
 require_once 'src/controller/front/blog.php';
 require_once 'src/controller/front/faq.php';
 require_once 'src/controller/front/login.php';
+require_once 'src/controller/front/gas.php';
 
 require_once 'src/controller/back/admin/dashboard_admin.php';
 
@@ -48,6 +49,10 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
 
     elseif ($_GET['action'] === 'faqPage') {
       faqPage();
+    }
+
+    elseif ($_GET['action'] === 'gasPage') {
+      gasPage();
     }
 
     elseif ($_GET['action'] === 'dashboard_adminPage') {

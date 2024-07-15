@@ -288,6 +288,11 @@ a{
 .documents{
     &__list{
         &__item{
+            
+
+            h3{
+                color: $secondary;
+            }
             cursor: pointer;
             color: $black;
             border-radius: 5px;
@@ -299,10 +304,10 @@ a{
         }
 
         &__item:hover{
-            color: $secondary;
+            color: $primary;
 
             h2{
-                color: $secondary;
+                color: $primary;
             }
         }
     }

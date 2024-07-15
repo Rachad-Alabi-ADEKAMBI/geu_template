@@ -16,7 +16,7 @@
                                         <div class="form-floating">
                                             <input type="text" class="form-control" 
                                             required name='username' value="<?= $_SESSION['login']['username'] ?>"  placeholder="">
-                                            <label for="name">Identifiant ou email <span class="red">*</span></label>
+                                            <label for="name">Identifiant <span class="red">*</span></label>
                                         </div>
                                     </div>
 
@@ -32,11 +32,13 @@
 
                                 <div class="row g-3 mt-4">
                                     <div class="col-sm-12 col-md-6 mx-auto text-center">
-                                        <button class="btn btn-blue w-100 py-3" type="submit">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">
                                             Connexion
                                         </button> <br>
+                                    </div>
 
-                                        <p class="mt-3">
+                                    <div class="col-12 text-center">
+                                        <p class="mt-3 ">
                                             Mot de passe oublié ? <a href="index.php?action=reset_passwordPage" class="text-blue">Cliquez ici</a>
                                         </p>
 
@@ -44,7 +46,6 @@
                                             Pas encore de compte ? <a href="index.php?action=registerPage" class="text-blue">Inscription</a>
                                         </p>
                                     </div>
-                                    
                                 </div>
                             </form>
                         </div>

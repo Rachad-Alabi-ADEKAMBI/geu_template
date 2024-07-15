@@ -58,7 +58,7 @@
                                     </h4>
 
                                     <ul>
-                                        <li><a href="index.php?action=gasPage">A-propos</a></li>
+                                        <li><a href="index.php?action=gasPage">Gaz</a></li>
                                         <li><a href="index.php?action=electricityPage">Electricité</a></li> 
                                     </ul>
                                 </div>

@@ -241,11 +241,14 @@ a {
   width: 47%;
   margin: 5px auto;
 }
-.documents__list__item:hover {
+.documents__list__item h3 {
   color: #3F3D88;
 }
+.documents__list__item:hover {
+  color: #E93810;
+}
 .documents__list__item:hover h2 {
-  color: #3F3D88;
+  color: #E93810;
 }
 
 .team {
