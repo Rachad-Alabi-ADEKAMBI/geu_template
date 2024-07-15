@@ -7,18 +7,17 @@
        <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                   <h1 class="text-center">
-                        Rejoignez notre équipe
+                   <h1 class="text-center mt-2 pt-5">
+                   Приєднуйтесь до нашої команди
                    </h1>
 
-                        <p class="text-justify">
-                            Nous recherchons des personnes professionnelles et dynamiques pour rejoindre notre équipe. Des personnes qui s'efforcent de se développer et de travailler pour obtenir des résultats et atteindre des objectifs ambitieux.
-                            GRU est une famille où la proactivité, l'enthousiasme, le dévouement, la décence et le progrès sont valorisés.
-                                Nous proposons du travail dans une équipe professionnelle et conviviale, nous promettons des projets intéressants. Le confort et la sécurité sociale sont la priorité de l'entreprise.
-                        </p>
+                   <p class="text-justify">
+                        Ми шукаємо професіоналів та динамічних особистостей для приєднання до нашої команди. Ми цінуємо тих, хто прагне розвиватися, працювати з наполегливістю для досягнення амбіційних цілей. У GEU ми створюємо сім'ю, де цінуються ініціативність, ентузіазм, відданість, порядність та прогрес. Ми пропонуємо роботу в професійній і дружній команді, обіцяємо цікаві проекти. Комфорт і соціальне забезпечення наших співробітників є нашими пріоритетами.
+                    </p>
+
 
                         <a href="index.php?action=home#contact" class="btn btn-primary mx-auto">
-                            Envoyez nous un message
+                        Надішліть нам повідомлення
                         </a>
                 </div>
             </div>

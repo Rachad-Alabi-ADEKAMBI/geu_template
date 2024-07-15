@@ -3,8 +3,8 @@
 // $articles
 
  ob_start(); ?>
-    <section class='section' >
-    <h1 class="text-center mt-4">
+    <section class='section mt-5' >
+    <h1 class="text-center">
         A-propos
     </h1>
        

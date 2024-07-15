@@ -18,27 +18,40 @@ function newDoc() {
         $doc_id = $pdo->lastInsertId();
 
         // pic
-        $file_field = ['file'];
+        $file_field = 'file';
         $base_dir = '../public/documents/';
-            if (isset($_FILES[$file_field]) && $_FILES[$file_field]['error'] == 0) {
+        if (isset($_FILES[$file_field]) && $_FILES[$file_field]['error'] == 0) {
+            // Check file type
+            $file_type = $_FILES[$file_field]['type'];
+            $allowed_types = ['application/pdf'];
+            if (in_array($file_type, $allowed_types)) {
                 $file_name = time() . '_' . $_FILES[$file_field]['name'];
                 $target = $base_dir . $file_name;
 
                 if (move_uploaded_file($_FILES[$file_field]['tmp_name'], $target)) {
                     $update_req = $pdo->prepare("UPDATE documents SET file = ? WHERE id = ?");
                     $update_req->execute([$file_name, $doc_id]);
+                    ?>
+                    <script>
+                        alert('File uploaded');
+                        window.location.replace('../index.php?action=dashboard_adminPage');
+                    </script>
+                    <?php
                 }
+            } else {
+                ?>
+                <script>
+                    alert('Only PDF files are allowed.');
+                    window.history.back();
+                </script>
+                <?php
             }
-        ?>
-        <script>
-            alert('File uploaded');
-            window.location.replace('../index.php?action=dashboard_adminPage');
-        </script>
-        <?php
+        }
     } catch (PDOException $e) {
         echo 'Database error: ' . $e->getMessage();
     }
 }
+
 
 function getAllDocs() {
     $pdo = getConnexion();

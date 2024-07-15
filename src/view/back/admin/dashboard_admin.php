@@ -140,7 +140,7 @@
                 showDocs: true,
                 showNewDoc: false,
                 showUsers: false,
-                detailss: [],
+                details: [],
                 currentPage: 1,
                 itemsPerPage: 5,
             },

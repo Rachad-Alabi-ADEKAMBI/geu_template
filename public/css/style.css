@@ -43,6 +43,10 @@ a:hover {
   color: #ffd700;
 }
 
+.text-white {
+  color: white;
+}
+
 .text-dark {
   color: black;
 }
