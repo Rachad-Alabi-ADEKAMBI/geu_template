@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="index.php">
     <img src="public/images/logo-geu.png" class='logo' alt="газ та електрика в Україні">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,6 @@
       </li>
     </ul>
    
-    <a class="btn btn-outline-success mr-0 my-sm-0" type="submit">Офіс</a>
+    <a class="btn btn-outline-success mr-0 my-sm-0" href="index.php?action=loginPage">Офіс</a>
   </div>
 </nav>

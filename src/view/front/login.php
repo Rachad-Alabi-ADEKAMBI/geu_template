@@ -1,4 +1,4 @@
-<?php $title = "Immobilier Bénin - Marketplace d'annonces immobilières au Bénin";
+<?php $title = "ГРУ - Зв'язок";
 
 // $articles
 
@@ -7,7 +7,7 @@
         <div class="container">
         <div class="row g-0 gx-5 align-items-end">
                     <div class="col-sm-12 col-md-7 mt-4 mx-auto" >
-                        <div class="bg-white border mt-2 rounded p-sm-5 wow">
+                        <div class="bg-dark mt-5 border pt-5 p-3 rounded p-sm-5 wow">
                             <form action="api/script.php?action=login" method="POST" >
                                 <h1 class="mx-auto text-center">Connexion</h1>
 
@@ -38,10 +38,6 @@
                                     </div>
 
                                     <div class="col-12 text-center">
-                                        <p class="mt-3 ">
-                                            Mot de passe oublié ? <a href="index.php?action=reset_passwordPage" class="text-blue">Cliquez ici</a>
-                                        </p>
-
                                         <p class="mt-3">
                                             Pas encore de compte ? <a href="index.php?action=registerPage" class="text-blue">Inscription</a>
                                         </p>

@@ -13,6 +13,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #0057b7;
+  font-weight: bold;
 }
 
 ul li {
@@ -21,6 +22,10 @@ ul li {
 
 img {
   border-radius: 5px;
+}
+
+.close:hover {
+  color: #ffd700;
 }
 
 a {
@@ -32,7 +37,7 @@ a:hover {
 }
 
 .text-justify {
-  text-align: justify;
+  text-align: left;
 }
 
 .text-center {
@@ -45,6 +50,10 @@ a:hover {
 
 .text-white {
   color: white;
+}
+
+.text-primary {
+  color: #0057b7;
 }
 
 .text-dark {
@@ -179,7 +188,7 @@ a:hover {
 .services__service {
   border-radius: 5px;
   border: 3px solid rgb(33, 37, 41);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/img/hero1.jpg");
+  background-image: linear-gradient(rgba(72, 162, 236, 0.5), rgba(236, 222, 26, 0.5)), url("../public/img/hero1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,9 +249,8 @@ a:hover {
 }
 .blog__items {
   display: flex;
-  justify-content: start;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: center;
 }
 .blog__items__item {
   border-radius: 5px;
@@ -253,7 +261,7 @@ a:hover {
   background-color: rgb(33, 37, 41);
   padding: 35px;
   margin: 15px;
-  width: 46%;
+  width: 100%;
 }
 .blog__items__item h3 {
   color: white;
@@ -273,6 +281,16 @@ a:hover {
   color: white;
 }
 
+@media (min-width: 600px) {
+  .blog__items__item {
+    width: 48%;
+  }
+}
+@media (min-width: 900px) {
+  .blog__items__item {
+    width: 30%;
+  }
+}
 .documents__list {
   display: flex;
   justify-content: start;

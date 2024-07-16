@@ -3,7 +3,7 @@
 // $articles
 
 ob_start(); ?>
-    <section class='section mt-5 pt-5' id='app'>
+    <section class='section pt-5' id='app'>
         <div class="container documents">
             <h1 class="text-center">
                 Documents
