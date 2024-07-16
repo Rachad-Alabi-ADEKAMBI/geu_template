@@ -1,4 +1,4 @@
-<?php $title = "Immobilier Bénin - Marketplace d'annonces immobilières au Bénin";
+<?php $title = "GEU - Кар'єра";
 
 // $articles
 

@@ -33,7 +33,7 @@
                                             <li><a href="index.php?action=aboutPage">Про нас</a></li>
                                             <li><a href="index.php?action=teamPage">Команда</a></li>
                                             <li><a href="index.php?action=careerPage">Кар'єра</a></li>
-                                            <li><a href="index.php?action=documentsPage">Документи</a></li>
+                                            <li><a href="index.php?action=loginPage">Документи</a></li>
                                             <li><a href="index.php?action=blogPage">Блог</a></li>
                                         </ul>
                                     </div>
@@ -70,7 +70,9 @@
                                 <div class="text text-center">
                                 <p class="text-center">
                                         © GEU, 2024, Всі права захищені <br>
+                                        <p class="text-yellow">
                                         Зроблено з любов'ю в Україні
+                                        </p>
                                     </p>
 
                                 </div>

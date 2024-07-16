@@ -67,14 +67,15 @@ ob_start();
 
         <!-- About -->
         <div class="container mt-5">
-            <div class="row">
+            <div class="row about">
                 <div class="col-sm-12 col-md-6 about__text">
                     <h2>Хто ми?</h2>
                     <div>
-                        <p>
+                        <p class="text-left">
                             GEU (Gas & Electricity Supply) базується в Україні та спеціалізується на реалізації проектів в енергетичній промисловості України. Компанія поєднує в собі великий досвід управління, глибоке розуміння місцевого ринку та визнану експертизу в енергетичному секторі.
                         </p>
-                        <a href="index.php?action=aboutPage" class="btn btn-primary">
+                        <a href="index.php?action=aboutPage"
+                         class="btn btn-primary mx-auto">
                             Дізнатися більше
                         </a>
                     </div>
@@ -100,10 +101,10 @@ ob_start();
                         <h3>
                             Газ
                         </h3>
-                        <p class="text-justify">
+                        <p class="text-left">
                             Наша газова дивізія присвячена наданню надійних та ефективних енергетичних рішень. Співпрацюючи з ключовими зацікавленими сторонами, ми забезпечуємо безпечний та неперервний постачання природного газу, відповідаючи потребам промисловості та домогосподарств.
                         </p>
-                        <a href="index.php?action=gasPage" class="btn btn-primary">
+                        <a href="index.php?action=gasPage" class="btn btn-primary mt-3">
                             Дізнатися більше
                         </a>
                     </div>
@@ -114,7 +115,7 @@ ob_start();
                         <h3>
                             Електрика
                         </h3>
-                        <p class="text-justify">
+                        <p class="text-left">
                             У секторі електроенергетики ми пропонуємо передову інфраструктуру та високоякісні сервіси. Завдяки нашим технічним знанням та розумінню ринку, ми сприяємо модернізації та стабільності електричних мереж, забезпечуючи стале та надійне електропостачання для всіх.
                         </p>
                         <a href="index.php?action=electricityPage" class="btn btn-primary mt-4">
@@ -164,50 +165,59 @@ ob_start();
         <!-- End Clients -->
 
         <!-- Blog -->
-        <div class="container mt-5" id="blog">
+        <div class="container mt-5 blog" id="blog">
             <h2 class="text-center">
                 Новини
             </h2>
             <p class="text-center">
                 Ми регулярно публікуємо новини щодо діяльності сектору, <br>
-                 а також для ефективного управління вашою енергією.
+                а також для ефективного управління вашою енергією.
             </p>
             <div class="row blog__items mt-3">
-                <div class="col-sm-12 col-md-6 blog__items__item">
-                    <h3>
-                        Еволюція енергетичних ринків в Україні
-                    </h3>
-                    <p class="text-justify">
-                        Україна швидко розвивається у своєму енергетичному секторі, під впливом значних економічних та політичних змін. Останні роки країна прагне диверсифікувати свої джерела енергії та модернізувати застарілу інфраструктуру.
-                    </p>
-                    <a href="index.php?action=articlePage1" class="btn btn-primary mx-auto">
-                        Читати далі
-                    </a>
-                    <div class="date">
-                        04 <br>
-                        червня
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="blog__items__item">
+                        <h3>
+                            Еволюція енергетичних ринків в Україні
+                        </h3>
+                        <p class="text-left mt-4">
+                        Україна швидко розвивається у своєму енергетичному 
+                        секторі, під впливом значних економічних та політичних 
+                        змін. Останні роки країна активно прагне диверсифікувати свої джерела енергії та модернізувати застарілу інфраструктуру,
+                         щоб забезпечити стабільне енергетичне майбутнє.
+                        </p>
+                        <a href="index.php?action=blogPage" 
+                                class="btn btn-primary mx-auto mt-4">
+                            Дивіться блог
+                        </a>
+                        <div class="date">
+                            04 <br>
+                            червня
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 blog__items__item">
-                    <h3>
-                        Важливість енергоефективності в домогосподарствах
-                    </h3>
-                    <p class="text-justify">
-                        У світі, що стикається з ростучими енергетичними викликами, кожен крок важливий для зменшення нашого вуглецевого сліду. Ця стаття розгляне, як прості коригування в наших щоденних звичках можуть призвести до значних економій енергії...
-                    </p>
-                    <a href="index.php?action=articlePage2" class="btn btn-primary mx-auto">
-                        Читати далі
-                    </a>
-                    <div class="date">
-                        04 <br>
-                        липня
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="blog__items__item">
+                        <h3>
+                            Важливість енергоефективності в домогосподарствах
+                        </h3>
+                        <p class="text-left">
+                            У світі, що стикається з ростучими енергетичними викликами, кожен крок важливий для зменшення нашого вуглецевого сліду. Ця стаття розгляне, як прості коригування в наших щоденних звичках можуть призвести до значних економій енергії...
+                        </p>
+                        <a href="index.php?action=blogPage" class="btn btn-primary mx-auto">
+                            Дивіться блог
+                        </a>
+                        <div class="date">
+                            04 <br>
+                            липня
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="" id="contact"></div>
         </div>
-
         <!-- End Blog -->
+
+
 
         <!-- Contact -->
         <div class="container mt-5">

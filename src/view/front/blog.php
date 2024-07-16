@@ -1,116 +1,61 @@
-<?php $title = "GRU - Blog";
+<?php $title = "ГРУ - Блог";
 
 // $articles
 
  ob_start(); ?>
     <section class='section' >
-       <!--blog-->
-        <div class="container" id="blog">
+         <!-- Blog -->
+         <div class="container mt-5 blog" id="blog">
             <h2 class="text-center">
-                Blog
+                Новини
             </h2>
-
             <p class="text-center">
-                Nous publions régulièrements des nouvelles
-                concernant l'activité <br> du secteur et également 
-                pour une bonne gestion de votre énergie
+                Ми регулярно публікуємо новини щодо діяльності сектору, <br>
+                а також для ефективного управління вашою енергією.
             </p>
-
             <div class="row blog__items mt-3">
-                <div class="col-sm-12 col-md-6 blog__items__item">
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="blog__items__item">
                         <h3>
-                            Comment éviter la 
-                            déconnexion de l'alimentation en gaz ?
+                            Еволюція енергетичних ринків в Україні
                         </h3>
-
-                        <p class="text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing 
-                            elit. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque  
+                        <p class="text-left mt-4">
+                        Україна швидко розвивається у своєму енергетичному 
+                        секторі, під впливом значних економічних та політичних 
+                        змін. Останні роки країна активно прагне диверсифікувати свої джерела енергії та модернізувати застарілу інфраструктуру,
+                         щоб забезпечити стабільне енергетичне майбутнє.
                         </p>
-
-                        <a href="" class="btn btn-primary mx-auto">
-                            Lire plus
+                        <a href="index.php?action=blogPage" 
+                                class="btn btn-primary mx-auto mt-4">
+                            Дивіться блог
                         </a>
-
                         <div class="date">
                             04 <br>
-                            July
+                            червня
                         </div>
+                    </div>
                 </div>
-
-                <div class="col-sm-12 col-md-6 blog__items__item">
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="blog__items__item">
                         <h3>
-                            Comment éviter la 
-                            déconnexion de l'alimentation en gaz ?
+                            Важливість енергоефективності в домогосподарствах
                         </h3>
-
-                        <p class="text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing 
-                            elit. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque  
+                        <p class="text-left">
+                            У світі, що стикається з ростучими енергетичними викликами, кожен крок важливий для зменшення нашого вуглецевого сліду. Ця стаття розгляне, як прості коригування в наших щоденних звичках можуть призвести до значних економій енергії...
                         </p>
-
-                        <a href="" class="btn btn-primary mx-auto">
-                            Lire plus
+                        <a href="index.php?action=blogPage" class="btn btn-primary mx-auto">
+                            Дивіться блог
                         </a>
-
                         <div class="date">
                             04 <br>
-                            July
+                            липня
                         </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 blog__items__item">
-                        <h3>
-                            Comment éviter la 
-                            déconnexion de l'alimentation en gaz ?
-                        </h3>
-
-                        <p class="text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing 
-                            elit. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque  
-                        </p>
-
-                        <a href="" class="btn btn-primary mx-auto">
-                            Lire plus
-                        </a>
-
-                        <div class="date">
-                            04 <br>
-                            July
-                        </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 blog__items__item">
-                        <h3>
-                            Comment éviter la 
-                            déconnexion de l'alimentation en gaz ?
-                        </h3>
-
-                        <p class="text-justify">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing 
-                            elit. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque. Veritatis obcaecati magni similique, temporibus
-                             odio iusto deserunt id eaque  
-                        </p>
-
-                        <a href="" class="btn btn-primary mx-auto">
-                            Lire plus
-                        </a>
-
-                        <div class="date">
-                            04 <br>
-                            July
-                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="" id="contact"></div>
         </div>
-       <!--end blog-->
+        <!-- End Blog -->
     </section>
 
 <?php $content = ob_get_clean(); ?>

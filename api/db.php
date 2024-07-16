@@ -21,7 +21,7 @@ function getConnexion()
 {
     try {
         return new PDO(
-            'mysql:host=localhost;dbname=gru;charset=UTF8',
+            'mysql:host=localhost;dbname=geu;charset=UTF8',
             'root',
             ''
         );

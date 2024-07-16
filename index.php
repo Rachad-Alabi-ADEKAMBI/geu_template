@@ -24,12 +24,12 @@ require_once 'src/controller/back/admin/dashboard_admin.php';
 if (isset($_GET['action']) && $_GET['action'] !== '') {
 
     if ($_GET['action'] === 'loginPage') {
+      if (isset($_SESSION['user'])) {
+        dashboard_adminPage();
+    } else {
         loginPage();
+        }
     }
-
-    if ($_GET['action'] === 'logout') {
-      logout();
-  }
 
     if ($_GET['action'] === 'registerPage') {
       registerPage();
@@ -70,7 +70,11 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     }
 
     elseif ($_GET['action'] === 'dashboard_adminPage') {
-      dashboard_adminPage();
+      if (!isset($_SESSION['user'])) {
+        loginPage();
+      } else {
+          dashboard_adminPage();
+      }
     }
 
     elseif ($_GET['action'] === 'home') {

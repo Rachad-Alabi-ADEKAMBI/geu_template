@@ -172,8 +172,6 @@ a:hover {
 }
 .about__text, .offers__text {
   margin: 15px auto;
-  padding: 5px 10px;
-  text-align: justify;
 }
 .about__text strong, .offers__text strong {
   color: #0057b7;
@@ -187,14 +185,14 @@ a:hover {
   margin: 0px auto;
 }
 .services__service {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 3px solid rgb(33, 37, 41);
-  background-image: linear-gradient(rgba(72, 162, 236, 0.5), rgba(236, 222, 26, 0.5)), url("../public/img/hero1.jpg");
+  background-image: linear-gradient(rgba(72, 162, 236, 0.5), rgba(236, 222, 26, 0.5));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  margin: 30px;
+  margin: 10px;
   flex: 1;
   padding: 30px;
 }
@@ -241,32 +239,27 @@ a:hover {
 }
 
 .blog {
-  display: block;
   text-align: center;
 }
 .blog h2, .blog p {
   width: 70%;
   margin: auto;
 }
-.blog__items {
-  justify-content: center;
-}
 .blog__items__item {
   border-radius: 5px;
   border: 3px solid rgb(33, 37, 41);
   position: relative;
-  display: block;
-  text-align: center;
   background-color: rgb(33, 37, 41);
   padding: 35px;
-  margin: 15px;
-  width: 100%;
+  margin: 10px;
 }
 .blog__items__item h3 {
-  color: white;
-}
-.blog__items__item .btn {
+  width: 90%;
   margin: auto;
+}
+.blog__items__item p {
+  width: 90%;
+  margin: 10px auto;
 }
 .blog__items__item .date {
   position: absolute;
@@ -274,22 +267,13 @@ a:hover {
   top: 115px;
   right: -30px;
   height: 90px;
-  width: 60px;
+  width: 70px;
   background-color: #ffd700;
   text-align: center;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
-@media (min-width: 600px) {
-  .blog__items__item {
-    width: 48%;
-  }
-}
-@media (min-width: 900px) {
-  .blog__items__item {
-    width: 30%;
-  }
-}
 .documents__list__item {
   cursor: pointer;
   color: white;
@@ -353,7 +337,7 @@ a:hover {
   flex: 1;
 }
 .footer__items__item h4 {
-  color: white;
+  color: #ffd700;
 }
 .footer__items__item ul {
   margin: 20px auto;
@@ -369,7 +353,7 @@ a:hover {
   color: white;
 }
 .footer__items__item ul li a:hover {
-  color: #0057b7;
+  color: #ffd700;
 }
 .footer__items__item .footer__gallery {
   display: flex;
@@ -403,4 +387,31 @@ a:hover {
 }
 .footer__bottom .text p strong {
   color: #0057b7;
+}
+
+/*responsive*/
+@media (max-width: 575px) {
+  .hero {
+    height: 140vh;
+    width: 100%;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    margin: auto auto auto 15px;
+  }
+  .about__image img {
+    width: 330px;
+    margin: auto;
+  }
+  .about__text .btn {
+    margin: auto;
+  }
+  .services__service {
+    padding: 8px;
+  }
+  .blog__items__item .date {
+    top: 220px;
+  }
 }/*# sourceMappingURL=style.css.map */
