@@ -148,6 +148,7 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 40px auto;
+  border-radius: 5px;
 }
 .about__image, .offers__image {
   position: relative;
@@ -248,8 +249,6 @@ a:hover {
   margin: auto;
 }
 .blog__items {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .blog__items__item {
@@ -291,26 +290,22 @@ a:hover {
     width: 30%;
   }
 }
-.documents__list {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 .documents__list__item {
   cursor: pointer;
   color: white;
   border-radius: 5px;
   border: 2px solid rgb(33, 37, 41);
   padding: 8px;
-  width: 47%;
   margin: 5px auto;
 }
 .documents__list__item h3 {
-  color: #ffd700;
+  color: white;
 }
 .documents__list__item:hover {
-  color: #0057b7;
+  color: #ffd700;
+}
+.documents__list__item:hover h3 {
+  color: #ffd700;
 }
 
 .team {

@@ -27,6 +27,10 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
         loginPage();
     }
 
+    if ($_GET['action'] === 'logout') {
+      logout();
+  }
+
     if ($_GET['action'] === 'registerPage') {
       registerPage();
   }
@@ -74,8 +78,13 @@ if (isset($_GET['action']) && $_GET['action'] !== '') {
     }
     
     else {
-       // errorPage();
-      // echo 'error';
+       ?>
+            <script>
+              alert('URL-адреса недійсна, перевірте її!');
+              window.history.back();
+              exit();
+            </script>
+       <?php
     }
 } else {
     home();

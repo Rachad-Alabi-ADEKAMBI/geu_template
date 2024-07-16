@@ -33,7 +33,7 @@ function newDoc() {
                     $update_req->execute([$file_name, $doc_id]);
                     ?>
                     <script>
-                        alert('File uploaded');
+                        alert('Документ додано');
                         window.location.replace('../index.php?action=dashboard_adminPage');
                     </script>
                     <?php
@@ -66,7 +66,7 @@ function getAllDocs() {
 function getSimpleDocs() {
     $pdo = getConnexion();
     $req = $pdo->prepare("SELECT * FROM documents
-     WHERE category = 'documents' 
+     WHERE category = 'docs' 
         ORDER BY id DESC");
     $req->execute();
     $datas = $req->fetchAll();
@@ -259,6 +259,48 @@ function register() {
         }
     }   
 }
+
+
+function deleteDoc($id){
+    $pdo = getConnexion();
+    $id = verifyInput($_GET['id']);
+
+    
+    if (!is_numeric($id) || $id <= 0) { ?>
+        <script>
+            alert('Une erreur est survenue, merci de vérifier cette url');
+        </script>
+        <?php
+        exit(); 
+    } else {
+       
+
+        try {
+            // Update user's situation to 'Deleted'
+            $reqUpdateUser = $pdo->prepare("DELETE from documents WHERE id = ?");
+            $reqUpdateUser->execute(array($id));
+
+             ?>
+            
+            <script>
+                alert("Документ видалено");
+                window.location.replace('../index.php?action=dashboard_adminPage');
+            </script>
+
+            <?php 
+        } catch (PDOException $e) {
+             echo 'Database error: ' . $e->getMessage();
+            ?>
+                <script>
+                  //  alert('Une erreur est survenue, merci de reéssayer ou de nous contacter si elle persiste');
+                   // window.location.replace('../index.php?action=dashboard_adminPage');
+                    exit();
+                </script>
+            <?php
+        }
+    }
+}
+
 
 function logout()
 {

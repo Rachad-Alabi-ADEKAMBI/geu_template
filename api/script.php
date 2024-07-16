@@ -23,6 +23,10 @@ if ($action == 'electricityDocs') {
     getElectricityDocs();
 }
 
+if ($action == 'deleteDoc') {
+    deleteDoc($id);
+}
+
 if($action == 'login'){
     login();
 }

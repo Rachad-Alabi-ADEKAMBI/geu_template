@@ -6,19 +6,19 @@ ob_start(); ?>
     <section class='section pt-5' id='app'>
         <div class="container documents">
             <h1 class="text-center">
-                Documents
+            Документ
             </h1>
 
             <div class="row documents__list">
                 <div class="col-sm-12 col-md-6 documents__list__item mt-3" 
                       v-for="detail in details" :key="detail.id"  @click='goToFile(detail.file)'>
                     <i class="bi bi-file-earmark"></i>
-                    <h2>
-                        {{ detail.name }}
-                    </h2>
+                    <h3>
+                        {{ truncateWord(detail.name) }}
+                    </h3>
 
                     <div class="doc">
-                        {{ detail.file }}
+                        {{ truncatePdf(detail.file) }}
                     </div>
                 </div>
             </div>
@@ -30,8 +30,6 @@ ob_start(); ?>
 <?php require './src/view/layout.php'; ?>
 
 <!-- Include Vue.js and Axios -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
     new Vue({
@@ -57,7 +55,19 @@ ob_start(); ?>
             goToFile(file) {
                 // Your logic to navigate to the file or do something with the file id
                 window.location.replace("public/documents/"+ file);
-            }
+            },
+            truncateWord(word) {
+                        if (word.length > 15) {
+                        return word.substring(0, 20) + '...';
+                        }
+                        return word;
+            },
+            truncatePdf(pdf) {
+                        if (pdf.length > 15) {
+                        return pdf.substring(0, 20) + '...pdf';
+                        }
+                        return pdf;
+            },
         }
     });
 </script>

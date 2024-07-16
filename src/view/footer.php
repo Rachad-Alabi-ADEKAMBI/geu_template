@@ -12,14 +12,14 @@
                                         </li>
 
                                         <li>
-                                        <i class="bi bi-geo"></i> Ukraine, 0000 Lviv
+                                        <i class="bi bi-geo"></i> Ukrain, 0000 Lviv
                                         </li>
 
                                         <li>
-                                        <i class="bi bi-envelope"></i> gas@gru.com.ua                                        </li>
+                                        <i class="bi bi-envelope"></i> support@geu.com.ua                                        </li>
 
                                         <li>
-                                        <i class="bi bi-telegram"></i> info@gru.com.ua
+                                        <i class="bi bi-telegram"></i> support@geu.com.ua
                                         </li>
                                     </ul>
                                 </div>
@@ -69,7 +69,7 @@
                             <div class="footer__bottom">
                                 <div class="text text-center">
                                 <p class="text-center">
-                                        © ГРУ, 2024, Всі права захищені <br>
+                                        © GEU, 2024, Всі права захищені <br>
                                         Зроблено з любов'ю в Україні
                                     </p>
 

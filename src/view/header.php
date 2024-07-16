@@ -38,6 +38,11 @@
       </li>
     </ul>
    
-    <a class="btn btn-outline-success mr-0 my-sm-0" href="index.php?action=loginPage">Офіс</a>
+    <?php 
+    if($_SESSION['user']['id']){ ?>
+      <a class="btn btn-danger mr-3 my-sm-0" href="index.php?action=logout">  Відключити</a>
+     <?php } else{ ?>
+      <a class="btn btn-outline-success mr-3 my-sm-0" href="index.php?action=loginPage">Офіс</a>
+    <?php } ?>
   </div>
 </nav>
