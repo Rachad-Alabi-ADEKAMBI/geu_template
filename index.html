@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Favicon -->
+  <link href="images/favicon.png" rel="icon">
+  
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet">
+  
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+
+  <!-- Template Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link href="css/style.css" rel="stylesheet">
+  
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="GEU – is a Ukrainian company that provides you with gas and electricity at lower prices in Ukraine">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  <link rel="icon" type="image/x-icon" href="images/logo-geu.png">
+    
+</head>
+<body>
+  <!--header-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo-geu.png" class='logo' alt="gas and electricity in Ukraine">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Company
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="team.html">Team</a>
+            <a class="dropdown-item text-white" href="career.html">Career</a>
+            <a class="dropdown-item text-white" href="contact.html">Contact</a>
+          </div>
+        </li> 
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="index.php?action=gasPage">Gas</a>
+            <a class="dropdown-item text-white" href="index.php?action=electricityPage">Electricity</a>
+          </div>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.php?action=blogPage">News</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.php?action=home#contact">Contact</a>
+        </li>
+      </ul>
+        <a class="btn btn-outline-success mr-3 my-sm-0" href="login.html">Login</a>
+    </div>
+  </nav>
+  <!--end header-->
+
+  <section class='section'>
+    <div class="">
+        <!-- Hero -->
+        <div class="hero">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 mx-auto">
+                    <div class="hero__content animate__animated animate__backInLeft animate__delay-1s">
+                        <h1 class="title">
+                            GEU
+                        </h1>
+                        <p class="text text-white fw-bold">
+                        Gas and electricity <br>
+                        Your ideal energy supplier in Ukraine
+                        </p>
+                        <a class="btn btn-primary" href="index.php?action=register">
+                        Become a client
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- why us -->
+        <div class="container">
+            <div class="row categories">
+                <div class="col-sm-12 col-md-3 category">
+                <div class="category__icon">
+                <i class="bi bi-cash"></i>
+                </div>
+                <p class="category__name">
+                    Beneficial <br>
+                    prices
+                </p>
+                </div>
+                <div class="col-sm-12 col-md-3 category">
+                <div class="category__icon">
+                    <i class="bi bi-award"></i>
+                </div>
+                <p class="category__name">
+                    Flawless <br> service
+                </p>
+                </div>
+                <div class="col-sm-12 col-md-3 category">
+                <div class="category__icon">
+                    <i class="bi bi-clock-history"></i>
+                </div>
+                <p class="category__name">
+                    24/7 <br> support
+                </p>
+                </div>
+                <div class="col-sm-12 col-md-3 category">
+                <div class="category__icon">
+                    <i class="bi bi-person-check"></i>
+                </div>
+                <p class="category__name">
+                    Individual offer
+                </p>
+                </div>
+            </div>
+        </div>
+        <!-- End why us-->
+
+        <!-- About -->
+        <div class="container mt-5">
+            <div class="row about">
+                <div class="col-sm-12 col-md-6 about__text">
+                    <h2>Who are we?</h2>
+                    <div>
+                        <p class="text-left">
+                            GEU (Gas & Electricity Supply) is based in Ukraine and specializes in implementing projects in Ukraine's energy sector. The company combines extensive management experience, a deep understanding of the local market, and recognized expertise in the energy sector.
+                        </p>
+                        <a href="index.php?action=aboutPage"
+                         class="btn btn-primary mx-auto">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 about__image">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GEU Image" class="image img-fluid">
+                    <div class="about__image__bg"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Services -->
+            <div class="container pt-3">
+                <h2 class="text-center">
+                    Our services
+                </h2>
+                <div class="row services">
+                    <div class="col-sm-12 col-md-6 services__service text-center">
+                        <span>
+                            <i class="bi bi-asterisk"></i>
+                        </span>
+                        <h3>
+                            Gas
+                        </h3>
+                        <p class="text-left">
+                            Our gas division is dedicated to providing reliable and efficient energy solutions. By collaborating with key stakeholders, we ensure safe and continuous natural gas supply, meeting the needs of both industries and households.
+                        </p>
+                        <a href="index.php?action=gasPage" class="btn btn-primary mt-3">
+                            Learn more
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 services__service text-center">
+                        <span>
+                            <i class="bi bi-lightbulb"></i>
+                        </span>
+                        <h3>
+                            Electricity
+                        </h3>
+                        <p class="text-left">
+                            In the electricity sector, we focus on offering a wide range of energy solutions. Our approach guarantees high standards of safety and performance, ensuring that our clients receive optimal electricity services for their operations and homes.
+                        </p>
+                        <a href="index.php?action=electricityPage" class="btn btn-primary mt-3">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- End Services -->
+
+                <!-- Clients -->
+                <div class="container mt-5 clients">
+                    <h2 class="text-center">
+                        Як стати клієнтом?
+                    </h2>
+                    <p class="text-center">
+                        Документи можна надсилати в будь-який час
+                        <br> і вони необхідні для обробки вашого запиту
+                    </p>
+                    <div class="clients__list">
+                        <div class="clients__list__item">
+                            <div class="circle">
+                                <p>1</p>
+                            </div>
+                            <p>
+                                Подати свої заявки <br> <a href="index.php?action=register">тут</a>
+                            </p>
+                        </div>
+                        <div class="clients__list__item">
+                            <div class="circle">
+                                <p>2</p>
+                            </div>
+                            <p>
+                                Надішліть ваші документи <br> <a href="index.php?action=dashboard">тут</a>
+                            </p>
+                        </div>
+                        <div class="clients__list__item">
+                            <div class="circle">
+                                <p>3</p>
+                            </div>
+                            <p>
+                                Чекайте 48 годин на <br> відповідь
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Clients -->
+        
+                <!-- Blog -->
+                <div class="container mt-5 blog" id="blog">
+                    <h2 class="text-center">
+                        Новини
+                    </h2>
+                    <p class="text-center">
+                        Ми регулярно публікуємо новини щодо діяльності сектору, <br>
+                        а також для ефективного управління вашою енергією.
+                    </p>
+                    <div class="row blog__items mt-3">
+                        <div class="col-sm-12 col-md-6 mb-3">
+                            <div class="blog__items__item">
+                                <h3>
+                                    Еволюція енергетичних ринків в Україні
+                                </h3>
+                                <p class="text-left mt-4">
+                                Україна швидко розвивається у своєму енергетичному 
+                                секторі, під впливом значних економічних та політичних 
+                                змін. Останні роки країна активно прагне диверсифікувати свої джерела енергії та модернізувати застарілу інфраструктуру,
+                                 щоб забезпечити стабільне енергетичне майбутнє.
+                                </p>
+                                <a href="index.php?action=blogPage" 
+                                        class="btn btn-primary mx-auto mt-4">
+                                    Дивіться блог
+                                </a>
+                                <div class="date">
+                                    04 <br>
+                                    червня
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-3">
+                            <div class="blog__items__item">
+                                <h3>
+                                    Важливість енергоефективності в домогосподарствах
+                                </h3>
+                                <p class="text-left">
+                                    У світі, що стикається з ростучими енергетичними викликами, кожен крок важливий для зменшення нашого вуглецевого сліду. Ця стаття розгляне, як прості коригування в наших щоденних звичках можуть призвести до значних економій енергії...
+                                </p>
+                                <a href="index.php?action=blogPage" class="btn btn-primary mx-auto">
+                                    Дивіться блог
+                                </a>
+                                <div class="date">
+                                    04 <br>
+                                    липня
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" id="contact"></div>
+                </div>
+                <!-- End Blog -->
+        
+        
+        
+                <!-- Contact -->
+                <div class="container mt-5">
+                    <div class="form">
+                        <h2 class="text-center">
+                            Контактна інформація
+                        </h2>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                            <label for="name" class="text-white">Ваше ім'я</label> <span class="red">*</span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Ваше ім'я">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Ваш email</label> <span class="red">*</span>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Ваш email">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                            <label for="subject">Тема</label> <span class="red">*</span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Тема">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                            <label for="message">Повідомлення</label> <span class="red">*</span>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Напишіть ваше повідомлення" id="message" style="height: 150px"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    Відправити
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+                <!-- End Contact -->
+        
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="footer__items">
+                    <div class="footer__items__item">
+                        <h4>
+                        Contact
+                        </h4>
+
+                        <ul>
+                            <li>
+                            <i class="bi bi-phone"></i> +01 1234567890
+                            </li>
+
+                            <li>
+                            <i class="bi bi-geo"></i> You Only Live Once
+                            </li>
+
+                            <li>
+                            <i class="bi bi-envelope"></i> demo@geu.com                                      </li>
+
+                            <li>
+                            <i class="bi bi-telegram"></i> demo@geu.com
+                            </li>
+                        </ul>
+                    </div>
+
+                                                        <div class="footer__items__item">
+                            <h4>
+                                Entreprise
+                            </h4>
+
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__items__item">
+                            <h4>
+                                Services
+                            </h4>
+
+                            <ul>
+                                <li><a href="index.php?action=faqPage">Часті питання</a></li>
+                                <li><a href="index.php?action=pricingPage">Тарифи</a></li>
+                                <li><a href="index.php?action=pricingPage">Надати документи</a></li>
+                                <li><a href="index.php?action=pricingPage">Перевірити заявку</a></li>
+                                <li><a href="index.php?action=dashboard_adminPage">Панель управління</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__items__item">
+                            <h4>
+                                Енергетичні продукти
+                            </h4>
+
+                            <ul>
+                                <li><a href="index.php?action=gasPage">Газ</a></li>
+                                <li><a href="index.php?action=electricityPage">Електрика</a></li>
+                            </ul>
+                        </div>
+
+                   </div>
+
+                <hr>
+                <div class="footer__bottom">
+                    <div class="text text-center">
+                    <p class="text-center">
+                            © GEU, 2024, GEU <br>
+                            <p class="text-yellow">
+                            Built by Chadow
+                            </p>
+                        </p>
+
+                    </div>
+    </div>
+</footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK3l7kwjG4I3QEF5zE4J6Qf5yT6b0YdQxYFyt5vK8XJgctN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO6B7dJ84cbTRHpD08dL8Z9DoW/PA/Ji5+2zswF8bqkS4CS54yq3F" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+</body>
+</html>
