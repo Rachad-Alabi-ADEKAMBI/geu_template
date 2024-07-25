@@ -258,7 +258,6 @@ ob_start();
                 </form>
             </div>
        </div>
-
         <!-- End Contact -->
     </div>
 </section>
