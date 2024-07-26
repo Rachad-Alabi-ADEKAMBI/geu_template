@@ -72,6 +72,7 @@ a:hover {
   width: 100%;
   color: white;
   z-index: 9999;
+  margin: 0;
 }
 .navbar .logo {
   width: 90px;
@@ -79,20 +80,20 @@ a:hover {
 }
 
 .hero {
-  height: 85vh;
-  margin: 0 auto;
+  height: 90vh;
+  margin: auto;
   z-index: -9999;
   display: block;
   background-image: linear-gradient(rgba(29, 48, 223, 0.548), rgba(92, 97, 19, 0.589)), url("https://plus.unsplash.com/premium_photo-1661964136447-676beb97b303?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 30px;
-  width: 100%;
+  padding-bottom: 50px;
   padding-top: 50px;
+  overflow: hidden;
 }
 .hero__content {
-  width: 80%;
+  width: 95%;
   margin: auto;
   height: 100%;
   padding-top: 110px;
